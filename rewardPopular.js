@@ -2,9 +2,9 @@ handlers.rewardPopular = function () {
 	var max = -1;
 	var popularUsers = [];
 	log.debug("here");
-	for each (userId in args.userIds){
+	for each (user in args.userIds){
 		var popularity = server.GetPlayerStatistics({
-			PlayFabId: userId,
+			PlayFabId: user,
 			StatisticNames: {
 				Popularity
 			}
