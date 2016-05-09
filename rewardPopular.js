@@ -1,4 +1,4 @@
-handlers.rewardPopular = function () {
+handlers.rewardPopular = function (args) {
 	var max = -1;
 	var popularUsers = [];
 	log.debug("here");
