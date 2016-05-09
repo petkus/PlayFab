@@ -1,6 +1,7 @@
 handlers.rewardPopular = function (args) {
 
 	log.info(args);
+	log.info(args.userIds)
 	log.error("error");
 	/*
 	var max = -1;
