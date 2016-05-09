@@ -1,4 +1,6 @@
 handlers.rewardPopular = function (args) {
+	log.info(args);
+	log.error("error");
 	var max = -1;
 	var popularUsers = [];
 	log.debug("here");
@@ -16,6 +18,6 @@ handlers.rewardPopular = function (args) {
 		} else if(popularity = max){
 			popularUsers += [user];
 		}
-		log.debug(max);
+		log.info(max);
 	}
 }
