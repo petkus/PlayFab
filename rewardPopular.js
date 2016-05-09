@@ -1,9 +1,10 @@
-handlers.rewardPopular = function (args) {
+handlers.rewardPopular = function () {
 	var max = -1;
 	var popularUsers = [];
-	for each (user in args.IDtracker){
+	log.debug("here");
+	for each (userId in args.userIds){
 		var popularity = server.GetPlayerStatistics({
-			PlayFabId: IDtracker[user],
+			PlayFabId: userId,
 			StatisticNames: {
 				Popularity
 			}
@@ -15,5 +16,6 @@ handlers.rewardPopular = function (args) {
 		} else if(popularity = max){
 			popularUsers += [user];
 		}
+		log.debug(max);
 	}
 }
