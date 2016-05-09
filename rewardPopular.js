@@ -1,7 +1,6 @@
 handlers.rewardPopular = function (args) {
-	x = {name: "peter"};
-	log.info(x);
 	log.info(args);
+	args = JSON.parse(args);
 	log.info(args.userIds);
 	log.error("error");
 	/*
