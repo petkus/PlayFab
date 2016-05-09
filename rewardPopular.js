@@ -1,9 +1,5 @@
 handlers.rewardPopular = function (args) {
-	log.info(args);
 	args = JSON.parse(args);
-	log.info(args.userIds);
-	log.error("error");
-	/*
 	var max = -1;
 	var popularUsers = [];
 	log.debug("here");
@@ -23,5 +19,4 @@ handlers.rewardPopular = function (args) {
 		}
 		log.info(max);
 	}
-	*/
 }
